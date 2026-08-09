@@ -1,4 +1,5 @@
 from pages.base_page import BasePage
+from utils.logger import get_logger
 
 class ItemPage(BasePage):
     def __init__(self, page):
@@ -7,6 +8,7 @@ class ItemPage(BasePage):
         #-----------------------------------------------------
         # locator of item/product of the application
         #-------------------------------------------------------
+        self.logger=get_logger(__name__)
         self.add_to_cart=self.page.get_by_role("button",name="Add to cart")
         self.see_in_cart=self.page.get_by_role("button",name="See in cart")
         self.added_to_cart_close=self.page.locator("button.lightbox-dialog__close:visible")
@@ -16,6 +18,7 @@ class ItemPage(BasePage):
     # click add to cart button
     #-------------------------------------------------------
     def click_add_to_cart(self):
+       
        self.add_to_cart.click()
        
     #-----------------------------------------------------
