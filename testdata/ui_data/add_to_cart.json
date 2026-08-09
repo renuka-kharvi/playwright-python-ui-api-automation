@@ -1,0 +1,6 @@
+{
+    "cart": {
+        "search_product": "book",
+        "expected_cart_count": 1
+    }
+}

@@ -1,0 +1,9 @@
+ { "bitcoin": {
+        "currencies": [
+            "usd",
+            "gbp",
+            "eur"
+        ],
+        "expected_status_code": 200
+   }  
+}
